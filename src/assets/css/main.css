@@ -1084,11 +1084,14 @@ body.lightmode .keep-dark .btn-accent{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 150vw;
+    height: 150vh;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: 0;
+    overflow: hidden;
     pointer-events: none;
-    width: 100%;
-    height: 100%;
 }
-
 
 .banner-video-content{
     display: flex;
@@ -1945,6 +1948,11 @@ body.lightmode .navbar-icon-wrapper{
     box-shadow: var(--box-shadow-bottom-right);
 }
 
+.card-about .counter-wrapper {
+    display: inline-flex;
+    align-items: center; /* Pastikan alignment di wrapper */
+}
+
 .card-about .counter{
     font-size: var(--font-size-15xl);
     line-height: var(--line-height-normal);
@@ -2032,6 +2040,11 @@ body.lightmode .navbar-icon-wrapper{
 
 .card-expertise:hover{
     box-shadow: var(--box-shadow-bottom-right);
+}
+
+.card-expertise .counter-wrapper {
+    display: inline-flex;
+    align-items: center; /* Pastikan alignment di wrapper */
 }
 
 .card-expertise .counter{
@@ -4205,16 +4218,19 @@ body.lightmode .cta-service-banner::before{
     opacity: 0;
 }
 
-.animated{
-    animation-duration: var(--animation-normal);
+.animate__animated {
+    animation-duration: 1.25s;
+    animation-duration: var(--animation-normal, 1.25s);
 }
 
-.animated.fast{
-    animation-duration: var(--animation-fast);
+.animate__animated.animate__fast {
+    animation-duration: 0.75s;
+    animation-duration: var(--animation-fast, 0.75s);
 }
 
-.animated.slow{
-    animation-duration: var(--animation-slow);
+.animate__animated.animate__slow {
+    animation-duration: 2s;
+    animation-duration: var(--animation-slow, 2s);
 }
 
 /* ================== 55. CustomText Container Components ================== */

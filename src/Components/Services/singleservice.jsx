@@ -1,9 +1,8 @@
-import React, { use } from "react";
+import React from "react";
 import { services } from "../../Data/ServiceData";
-import useAnimateOnScroll from "../Hooks/useAnimateOnScroll";
+import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
 const SingleServiceSection = () => {
-    useAnimateOnScroll();
     return (
         <div className="section pb-0">
             <div className="hero-container">
@@ -19,19 +18,17 @@ const SingleServiceSection = () => {
                                 <div className="single-service-spacer"></div>
                                 <div className="single-service-title-wrapper">
                                     <div className="single-service-title">
-                                        <div
-                                        className="sub-heading animate-box animated slow animate__animated"
-                                        data-animate="animate__fadeInRight"
-                                        >
-                                        <i className="fa-regular fa-circle-dot"></i>
-                                            <span>Our Expertise</span>
-                                        </div>
-                                        <h3
-                                        className="title-heading animate-box animated animate__animated"
-                                        data-animate="animate__fadeInRight"
-                                        >
-                                        Boost Your Brand with Strategic Social Media Marketing
-                                        </h3>
+                                        <AnimateOnScroll animation="fadeInRight" speed="slow">
+                                            <div className="sub-heading">
+                                                <i className="fa-regular fa-circle-dot"></i>
+                                                <span>Our Expertise</span>
+                                            </div>
+                                        </AnimateOnScroll>
+                                        <AnimateOnScroll animation="fadeInRight" speed="normal">
+                                            <h3 className="title-heading">
+                                                Boost Your Brand with Strategic Social Media Marketing
+                                            </h3>
+                                        </AnimateOnScroll>
                                         <p>
                                             Maximize engagement, build loyal communities, and drive conversions across all major platforms lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                                         </p>
