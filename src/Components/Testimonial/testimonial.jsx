@@ -19,10 +19,17 @@ const TestimonialSection = () => {
                                         <div className="d-flex flex-column flex-md-row flex-lg-column justify-content-between gspace-3">
                                             <div className="testimonial-reviewer">
                                                 <div className="avatar-container">
+<<<<<<< HEAD
                                                     <img src="/assets/images/dummy-img-400x400.jpg" alt="Testimonial Reviewer" className="avatar" />
                                                     <img src="/assets/images/dummy-img-400x400.jpg" alt="Testimonial Reviewer" className="avatar" />
                                                     <img src="/assets/images/dummy-img-400x400.jpg" alt="Testimonial Reviewer" className="avatar" />
                                                     <img src="/assets/images/dummy-img-400x400.jpg" alt="Testimonial Reviewer" className="avatar" />
+=======
+                                                    <img src="/assets/images/Photo-14.jpg" alt="Testimonial Reviewer" className="avatar" />
+                                                    <img src="/assets/images/Photo-1.jpg" alt="Testimonial Reviewer" className="avatar" />
+                                                    <img src="/assets/images/Photo-2.jpg" alt="Testimonial Reviewer" className="avatar" />
+                                                    <img src="/assets/images/Photo-6.jpg" alt="Testimonial Reviewer" className="avatar" />
+>>>>>>> c3627d7f6901e92b8cf00faf837de06bf6010259
                                                 </div>
                                                 <div className="detail">
                                                     <h6>2.7k Positive</h6>
