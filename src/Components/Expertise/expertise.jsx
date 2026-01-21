@@ -3,6 +3,34 @@ import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 import CounterOnScroll from "../Hooks/CounterOnScroll";
 
 function ExpertiseSection() {
+  return (
+    <>
+      <div className="section">
+        <div className="hero-container">
+          <div className="d-flex flex-column flex-lg-row gspace-5">
+            <div className="expertise-img-layout">
+              <div className="image-container expertise-img">
+                <AnimateOnScroll animation="fadeInUp" speed="normal">
+                  <img
+                    src="/assets/images/infernation-expertise.png"
+                    alt="Expertise Image"
+                    className="img-fluid"
+                  />
+                </AnimateOnScroll>
+                <div className="expertise-layout">
+                  <div className="d-flex flex-column">
+                    <div className="card-expertise-wrapper">
+                      <AnimateOnScroll animation="fadeInDown" speed="normal">
+                        <div className="card card-expertise">
+                          <h4>Ready to Elevate Your Digital Presence?</h4>
+                          <p>
+                            Let's create a custom strategy that fits your
+                            business goals.
+                          </p>
+                          <div className="d-flex align-items-center flex-row gspace-2 expertise-link">
+                            <a href="./contact">Get Free Consultation</a>
+                            <i className="fa-solid fa-circle-arrow-right"></i>
+                          </div>
                         </div>
                       </AnimateOnScroll>
                     </div>
