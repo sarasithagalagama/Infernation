@@ -2,6 +2,39 @@ import React from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
 function AboutSection() {
+  return (
+    <div className="section">
+      <div className="hero-container">
+        <div className="d-flex flex-column flex-lg-row gspace-5">
+          <div className="about-img-layout">
+            <div className="image-container about-img">
+              <AnimateOnScroll animation="fadeInUp" speed="normal">
+                <img
+                  src="/assets/images/infernation-about.png"
+                  alt="About Us Image"
+                  className="img-fluid"
+                />
+              </AnimateOnScroll>
+
+              <div className="about-layout">
+                <div className="d-flex flex-column">
+                  <div className="card-about-wrapper">
+                    <AnimateOnScroll animation="fadeInDown" speed="normal">
+                      <div className="card card-about">
+                        <div className="d-flex flex-row align-items-center">
+                          <span className="counter" data-target="21"></span>
+                          <span className="counter-detail">+</span>
+                        </div>
+                        <h6>
+                          Years of Experience on Digital Marketing Services
+                        </h6>
+                      </div>
+                    </AnimateOnScroll>
+                  </div>
+                  <div className="about-spacer"></div>
+                </div>
+                <div className="about-spacer"></div>
+              </div>
             </div>
           </div>
           <div className="about-title">
