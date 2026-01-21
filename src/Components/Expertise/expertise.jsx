@@ -12,7 +12,7 @@ function ExpertiseSection() {
               <div className="image-container expertise-img">
                 <AnimateOnScroll animation="fadeInUp" speed="normal">
                   <img
-                    src="/assets/images/dummy-img-600x400.jpg"
+                    src="/assets/images/infernation-expertise.png"
                     alt="Expertise Image"
                     className="img-fluid"
                   />
@@ -50,7 +50,7 @@ function ExpertiseSection() {
 
               <AnimateOnScroll animation="fadeInRight" speed="normal">
                 <h2 className="title-heading">
-                  Crafting Digital Experiences That Matter
+                  Turning Your Imagination Into Reality!
                 </h2>
               </AnimateOnScroll>
               <p>
