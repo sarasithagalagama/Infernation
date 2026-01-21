@@ -14,25 +14,25 @@ import PartnershipSection from "../../Components/Partnership/Partnership";
 import NewsletterSection from "../../Components/Form/Newsletter";
 import BlogSection from "../../Components/Blog/blog";
 
-function HomePage(){
-    return(
-        <>
-            <HeadTitle title="Home - Marko - Digital Marketing Agency" />
-            <BannerHomeSection />
-            <ExpertiseSection />
-            <PartnershipSection />
-            <ChooseUsSection />
-            <GuideBannerSection />
-            <ModalVideoSection />
-            <ServiceSection />
-            <CaseStudiesSection noPadding={true} />
-            <TestimonialSection />
-            <DigitalProcessSection />
-            <PricingPlanSection />
-            <NewsletterSection />
-            <BlogSection />
-        </>
-    );
+function HomePage() {
+  return (
+    <>
+      <HeadTitle title="Home - Infernation - Digital Marketing Agency" />
+      <BannerHomeSection />
+      <ExpertiseSection />
+      <PartnershipSection />
+      <ChooseUsSection />
+      <GuideBannerSection />
+      <ModalVideoSection />
+      <ServiceSection />
+      <CaseStudiesSection noPadding={true} />
+      <TestimonialSection />
+      <DigitalProcessSection />
+      <PricingPlanSection />
+      <NewsletterSection />
+      <BlogSection />
+    </>
+  );
 }
 
 export default HomePage;

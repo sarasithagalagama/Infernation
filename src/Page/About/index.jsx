@@ -10,21 +10,21 @@ import ModalVideoSection from "../../Components/Video/video";
 import DigitalProcessSection from "../../Components/DigitalProcess/digitalstep";
 import TestimonialSection from "../../Components/Testimonial/testimonial";
 
-function AboutPage(){
-    return(
-        <>
-            <HeadTitle title="About - Marko - Digital Marketing Agency"/>
-            <BannerInnerSection title="About Marko" currentPage="About Us" />
-            <AboutSection />
-            <PartnershipSection />
-            <ChooseUsAboutSection />
-            <GuideBannerSection />
-            <ModalVideoSection />
-            <TeamSection />
-            <DigitalProcessSection />
-            <TestimonialSection />
-        </>
-    );
+function AboutPage() {
+  return (
+    <>
+      <HeadTitle title="About - Infernation - Digital Innovation Platform" />
+      <BannerInnerSection title="About Infernation" currentPage="About Us" />
+      <AboutSection />
+      <PartnershipSection />
+      <ChooseUsAboutSection />
+      <GuideBannerSection />
+      <ModalVideoSection />
+      <TeamSection />
+      <DigitalProcessSection />
+      <TestimonialSection />
+    </>
+  );
 }
 
 export default AboutPage;

@@ -312,6 +312,25 @@
     .section-banner{
         padding: 0px 20px 0px 20px;
     }
+    .banner-video-container{
+        padding: 40px 20px 20px 20px;
+        background-color: var(--secondary);
+        min-height: auto;
+    }
+    .banner-video-container::before{
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+    }
+    #banner-video-background {
+        width: 200vw;
+        height: 200vh;
+        min-width: 200%;
+        min-height: 200%;
+    }
+    .banner-heading{
+        gap: 30px;
+    }
     .section-guide{
         padding: 0px 20px 0px 20px;
     }
