@@ -4,7 +4,7 @@ import ThemeSwitcher from "../Theme/themeswitch";
 import { useNav } from "../Context/NavContext";
 
 function Navbar() {
-<<<<<<< HEAD
+
   const { isDropdownActive } = useNav();
 
   return (
