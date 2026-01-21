@@ -3,7 +3,6 @@ import { whychooseus } from "../../Data/ChooseUsData";
 import ChooseUsCard from "../Card/ChoooseUsCard";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
-
 function ChooseUsSection() {
   return (
     <>
@@ -67,11 +66,16 @@ function ChooseUsSection() {
                           </div>
                         </AnimateOnScroll>
                       </div>
-
                     </div>
                   </div>
                 </div>
-
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default ChooseUsSection;
