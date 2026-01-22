@@ -16,13 +16,13 @@ function AboutPage() {
       <HeadTitle title="About - Infernation - Digital Innovation Platform" />
       <BannerInnerSection title="About Infernation" currentPage="About Us" />
       <AboutSection />
-      <PartnershipSection />
+      {/* <PartnershipSection /> */}
       <ChooseUsAboutSection />
-      <GuideBannerSection />
-      <ModalVideoSection />
-      <TeamSection />
-      <DigitalProcessSection />
-      <TestimonialSection />
+      {/* <GuideBannerSection /> */}
+      {/* <ModalVideoSection /> */}
+      {/* <TeamSection /> */}
+      {/* <DigitalProcessSection /> */}
+      {/* <TestimonialSection /> */}
     </>
   );
 }

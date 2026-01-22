@@ -12,8 +12,8 @@ function ExpertiseSection() {
               <div className="image-container expertise-img">
                 <AnimateOnScroll animation="fadeInUp" speed="normal">
                   <img
-                    src="/assets/images/infernation-expertise.png"
-                    alt="Expertise Image"
+                    src="/assets/images/imgi_44_Line-Background-4.png"
+                    alt="Expertise Background"
                     className="img-fluid"
                   />
                 </AnimateOnScroll>

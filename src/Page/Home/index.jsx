@@ -6,6 +6,8 @@ import ChooseUsSection from "../../Components/ChooseUs/choose";
 import GuideBannerSection from "../../Components/Banner/guide";
 import ModalVideoSection from "../../Components/Video/video";
 import ServiceSection from "../../Components/Services/service";
+import ServiceListSection from "../../Components/Services/ServiceList";
+import ServiceGridSection from "../../Components/Services/ServiceGrid";
 import CaseStudiesSection from "../../Components/CaseStudies/CaseStudies";
 import TestimonialSection from "../../Components/Testimonial/testimonial";
 import DigitalProcessSection from "../../Components/DigitalProcess/digitalstep";
@@ -19,18 +21,18 @@ function HomePage() {
     <>
       <HeadTitle title="Home - Infernation - Digital Marketing Agency" />
       <BannerHomeSection />
-      <ExpertiseSection />
-      <PartnershipSection />
+      {/* <ExpertiseSection /> */}
+      {/* <PartnershipSection /> */}
       <ChooseUsSection />
-      <GuideBannerSection />
-      <ModalVideoSection />
+      {/* <GuideBannerSection /> */}
+      {/* <ModalVideoSection /> */}
       <ServiceSection />
-      <CaseStudiesSection noPadding={true} />
-      <TestimonialSection />
-      <DigitalProcessSection />
-      <PricingPlanSection />
-      <NewsletterSection />
-      <BlogSection />
+      {/* <CaseStudiesSection noPadding={true} /> */}
+      {/* <TestimonialSection /> */}
+      {/* <DigitalProcessSection /> */}
+      {/* <PricingPlanSection /> */}
+      {/* <NewsletterSection /> */}
+      {/* <BlogSection /> */}
     </>
   );
 }

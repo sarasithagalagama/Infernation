@@ -1,5 +1,5 @@
 import React from "react";
-import { services } from "../../Data/ServiceData";
+import { serviceGridCards } from "../../Data/ServiceGridData";
 import ServiceCard from "../Card/ServiceCard";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
@@ -13,19 +13,30 @@ function ServiceSection() {
               <AnimateOnScroll animation="fadeInDown" speed="normal">
                 <div className="sub-heading align-self-center">
                   <i className="fa-regular fa-circle-dot"></i>
-                  <span>Our Core Services</span>
+                  <span>What We Do</span>
                 </div>
               </AnimateOnScroll>
 
               <AnimateOnScroll animation="fadeInDown" speed="normal">
                 <h2 className="title-heading heading-container heading-container-medium">
-                  OUR CORE SERVICES: STRATEGY, CREATION, & EXECUTION
+                  WHAT WE DO: STRATEGY, CREATION, & EXECUTION
                 </h2>
               </AnimateOnScroll>
             </div>
+
+            {/* Service List Text */}
+            <AnimateOnScroll animation="fadeInDown" speed="normal">
+              <h3 className="title-heading">
+                Photography | Videography | Social Media Management | Graphic
+                Design | Advertising Campaigns | Marketing Campaigns |
+                Influencer Partnerships | Web Development | App Development |
+                Event Planning
+              </h3>
+            </AnimateOnScroll>
+
             <div className="card-service-wrapper">
               <div className="row row-cols-lg-3 row-cols-md-2 row-cols-1 grid-spacer-2">
-                {services.map((item) => (
+                {serviceGridCards.map((item) => (
                   <div className="col" key={item.id}>
                     <ServiceCard
                       icon={item.icon}

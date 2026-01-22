@@ -35,15 +35,15 @@ function ChooseUsAboutSection() {
                     </h2>
                     <p className="mb-0">
                       In the fast-paced digital world, choosing the right
-                      marketing partner makes all the difference. At Marko, we
-                      don’t just create campaigns—we craft strategies that
-                      deliver measurable success.
+                      marketing partner makes all the difference. At
+                      Infernation, we don’t just create campaigns—we craft
+                      strategies that deliver measurable success.
                     </p>
                   </div>
                 </AnimateOnScroll>
                 <div className="image-container">
                   <img
-                    src="/assets/images/dummy-img-600x400.jpg"
+                    src="/assets/images/choose_us_visual.jpg"
                     alt="Why Choose Us Image"
                     className="chooseus-img"
                   />
@@ -55,8 +55,8 @@ function ChooseUsAboutSection() {
                         <AnimateOnScroll animation="fadeInUp" speed="normal">
                           <div className="card card-chooseus-cta">
                             <h5>
-                              Partner with Marko & take your brand to the next
-                              level.
+                              Partner with Infernation & take your brand to the
+                              next level.
                             </h5>
                             <div className="link-wrapper">
                               <a href="./contact">Let's Talk Strategy</a>

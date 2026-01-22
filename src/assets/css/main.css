@@ -605,7 +605,7 @@ body.lightmode .form select{
 }
 
 .site-logo {
-    max-width: 200px;
+    max-width: 280px;
     height: auto;
 }
 
@@ -4403,4 +4403,68 @@ body.lightmode .cta-service-banner::before{
     align-self: center;
     background-color: transparent;
     background-image: radial-gradient(at center center, var(--accent-color-6) 0%, var(--accent-transparent) 70%);
+}
+
+/* ================== 58. Preloader ================== */
+
+.preloader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #040404;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-out;
+}
+
+.sphere-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader-sphere {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, #000 30%, #C82AEF 100%);
+    box-shadow: 0 0 30px rgba(200, 42, 239, 0.3), inset 0 0 20px rgba(200, 42, 239, 0.3);
+    border: 1px solid rgba(200, 42, 239, 0.5);
+    animation: rotateSphere 2s linear infinite;
+}
+
+.preloader-text {
+    color: #fff;
+    font-family: var(--global-font);
+    font-size: 14px;
+    letter-spacing: 1px;
+    z-index: 2;
+    animation: fadeInOut 2s ease-in-out infinite;
+}
+
+@keyframes rotateSphere {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 0 0 30px rgba(200, 42, 239, 0.3), inset 0 0 20px rgba(200, 42, 239, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 50px rgba(200, 42, 239, 0.6), inset 0 0 30px rgba(200, 42, 239, 0.5);
+    }
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 0 0 30px rgba(200, 42, 239, 0.3), inset 0 0 20px rgba(200, 42, 239, 0.3);
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
 }

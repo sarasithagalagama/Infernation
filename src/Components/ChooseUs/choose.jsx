@@ -44,7 +44,7 @@ function ChooseUsSection() {
                 </AnimateOnScroll>
                 <div className="image-container">
                   <img
-                    src="/assets/images/dummy-img-600x400.jpg"
+                    src="/assets/images/choose_us_visual.jpg"
                     alt="Why Choose Us Image"
                     className="chooseus-img"
                   />
@@ -59,10 +59,10 @@ function ChooseUsSection() {
                               Partner with Infernation & take your brand to the
                               next level.
                             </h5>
-                            <div className="link-wrapper">
+                            {/* <div className="link-wrapper">
                               <a href="./service">What we do</a>
                               <i className="fa-solid fa-circle-arrow-right"></i>
-                            </div>
+                            </div> */}
                           </div>
                         </AnimateOnScroll>
                       </div>
