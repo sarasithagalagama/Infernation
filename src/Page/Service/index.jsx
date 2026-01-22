@@ -12,9 +12,9 @@ function ServicePage() {
       <HeadTitle title="Services - Infernation - Digital Innovation Platform" />
       <BannerInnerSection title="Our Services" currentPage="Services" />
       <ServiceSection />
-      <GuideBannerSection />
-      <ModalVideoSection />
-      <PricingPlanSection />
+      {/* <GuideBannerSection /> */}
+      {/* <ModalVideoSection /> */}
+      {/* <PricingPlanSection /> */}
     </>
   );
 }

@@ -44,7 +44,7 @@ function ChooseUsSection() {
                 </AnimateOnScroll>
                 <div className="image-container">
                   <img
-                    src="/assets/images/choose_us_visual.jpg"
+                    src="/assets/images/Gemini_Generated_Image_9aezor9aezor9aez.png"
                     alt="Why Choose Us Image"
                     className="chooseus-img"
                   />

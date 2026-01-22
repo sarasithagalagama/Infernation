@@ -130,18 +130,10 @@ const Footer = () => {
               <div className="footer-content-spacer"></div>
             </div>
 
-            <div className="copyright-container">
+            <div className="copyright-container justify-content-center">
               <span className="copyright">
-                © 2025 Infernation. All Rights Reserved.
+                © 2026 Infernation. All Rights Reserved.
               </span>
-              <div className="d-flex flex-row gspace-2">
-                <a href="#" className="legal-link">
-                  Terms of Service
-                </a>
-                <a href="#" className="legal-link">
-                  Privacy Policy
-                </a>
-              </div>
             </div>
 
             <div className="footer-spacer"></div>
