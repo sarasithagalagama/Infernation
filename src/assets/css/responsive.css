@@ -319,6 +319,7 @@
         padding: 40px 20px 20px 20px;
         background-color: var(--secondary);
         min-height: auto;
+        aspect-ratio: auto;
     }
     .banner-video-container::before{
         background-image: none;
@@ -326,11 +327,13 @@
         opacity: 1;
     }
     #banner-video-background {
-        width: 200vw;
-        height: 200vh;
-        min-width: 200%;
-        min-height: 200%;
+        height: 100%;
+        width: auto;
+        aspect-ratio: 16/9;
+        min-width: 100%;
+        min-height: 100%;
     }
+
     .banner-heading{
         gap: 30px;
     }

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import VideoButton from "../Video/VideoButton";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
 function BannerHomeSection() {
@@ -52,6 +51,12 @@ function BannerHomeSection() {
       }
       if (event.data === window.YT.PlayerState.PLAYING) {
         playerRef.current.setPlaybackQuality("hd1080");
+        // Ensure styling prevents interaction
+        const iframe = playerRef.current.getIframe();
+        if (iframe) {
+          iframe.style.pointerEvents = "none";
+          iframe.style.opacity = "1";
+        }
       }
     }
 
@@ -62,6 +67,8 @@ function BannerHomeSection() {
       const containerWidth = container.offsetWidth;
       const containerHeight = container.offsetHeight;
       const aspectRatio = 16 / 9;
+      // Scale factor to zoom the video slightly to hide controls/branding
+      const scaleFactor = 1.6;
 
       let newWidth, newHeight;
       if (containerWidth / containerHeight > aspectRatio) {
@@ -72,9 +79,17 @@ function BannerHomeSection() {
         newHeight = containerHeight;
       }
 
+      // Apply scale
+      newWidth *= scaleFactor;
+      newHeight *= scaleFactor;
+
       const iframe = playerRef.current.getIframe();
       iframe.style.width = `${newWidth}px`;
       iframe.style.height = `${newHeight}px`;
+      if (!iframe.style.opacity) {
+        iframe.style.opacity = "0";
+        iframe.style.transition = "opacity 1s ease-in-out";
+      }
     }
 
     function handleYouTubeErrors() {
@@ -100,7 +115,7 @@ function BannerHomeSection() {
           className="banner-video-container keep-dark"
         >
           <div id="banner-video-background"></div>
-          <div className="hero-container position-relative">
+          <div className="hero-container position-relative z-2">
             <div className="d-flex flex-column gspace-2">
               <AnimateOnScroll animation="fadeInLeft" speed="normal">
                 <h1 className="title-heading-banner">
@@ -109,7 +124,7 @@ function BannerHomeSection() {
               </AnimateOnScroll>
               <div className="banner-heading">
                 <div className="banner-video-content order-lg-1 order-2">
-                  {/* Video preview removed as per clean requirement, can be added back if needed */}
+                  {/* Content placeholder */}
                 </div>
 
                 <AnimateOnScroll animation="fadeInRight" speed="normal">

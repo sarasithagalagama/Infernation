@@ -9,7 +9,21 @@ const ServiceCard = ({ icon, title, content, link, speed = "" }) => {
           <div className="d-flex flex-row gspace-2 gspace-md-3 align-items-center">
             <div className="service-icon-wrapper">
               <div className="service-icon">
-                <img src={icon} alt="Service Icon" className="img-fluid" />
+                <div
+                  style={{
+                    width: "60%",
+                    height: "60%",
+                    backgroundColor: "var(--accent-color)",
+                    maskImage: `url(${icon})`,
+                    WebkitMaskImage: `url(${icon})`,
+                    maskSize: "contain",
+                    WebkitMaskSize: "contain",
+                    maskRepeat: "no-repeat",
+                    WebkitMaskRepeat: "no-repeat",
+                    maskPosition: "center",
+                    WebkitMaskPosition: "center",
+                  }}
+                />
               </div>
             </div>
             <div className="service-title flex-grow-1">
