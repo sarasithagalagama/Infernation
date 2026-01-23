@@ -11,17 +11,18 @@ const ServiceCard = ({ icon, title, content, link, speed = "" }) => {
               <div className="service-icon">
                 <div
                   style={{
-                    width: "60%",
-                    height: "60%",
+                    width: "48px",
+                    height: "48px",
                     backgroundColor: "var(--accent-color)",
-                    maskImage: `url(${icon})`,
-                    WebkitMaskImage: `url(${icon})`,
+                    maskImage: `url("${icon}")`,
+                    WebkitMaskImage: `url("${icon}")`,
                     maskSize: "contain",
                     WebkitMaskSize: "contain",
                     maskRepeat: "no-repeat",
                     WebkitMaskRepeat: "no-repeat",
                     maskPosition: "center",
                     WebkitMaskPosition: "center",
+                    display: "block",
                   }}
                 />
               </div>
