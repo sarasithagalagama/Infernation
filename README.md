@@ -31,44 +31,6 @@ Infernation is a cutting-edge digital marketing agency specializing in:
 - **UI Components:** Swiper for carousels and sliders
 - **Icons:** Font Awesome
 
-## 📦 Installation
-
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd Infernation
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser**
-   ```
-   Navigate to http://localhost:5173
-   ```
-
-## 📜 Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server with hot reload |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build locally |
-| `npm run lint` | Run ESLint to check code quality |
-
 ## 📁 Project Structure
 
 ```
@@ -93,30 +55,3 @@ Infernation/
 ├── vite.config.js       # Vite configuration
 └── package.json         # Project dependencies
 ```
-
-## 🎨 Customization
-
-### Updating Logo Sizes
-Logo sizes can be adjusted in the CSS files:
-
-- **Desktop:** `src/assets/css/main.css` - Line ~625 (`.site-logo`)
-- **Tablet:** `src/assets/css/responsive.css` - Line ~85 (inside `@media screen and (max-width: 991px)`)
-- **Mobile:** `src/assets/css/responsive.css` - Line ~480 (inside `@media screen and (max-width: 767px)`)
-
-### Color Scheme
-The color scheme is defined using CSS variables in `src/assets/css/main.css`. Modify the `:root` variables to change the theme.
-
-## 📧 Contact
-
-For business inquiries:
-- **Email:** dreams@infernation.com
-- **Phone:** +94 (0) 766 338 858
-- **Website:** [Infernation](https://infernation.com)
-
-## 📄 License
-
-© 2026 Infernation. All Rights Reserved.
-
----
-
-**Built with ❤️ by the Infernation Team**
