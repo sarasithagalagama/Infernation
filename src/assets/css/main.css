@@ -80,12 +80,12 @@
   --primary: #d1d1d1;
   --secondary: #040404;
   --text-color: #8b8b8b;
-  --accent-color: #FF6600;
+  --accent-color: #a80000;
   --accent-color-2: #ffffff;
   --accent-color-3: #1f1f1f;
   --accent-color-4: #0e0e0e;
   --accent-color-5: #0404047d;
-  --accent-color-6: #FF660085;
+  --accent-color-6: #FF000085;
   --accent-color-7: #ffffff8c;
   --star-color: #efbc2a;
   --error-color: #e63946;
@@ -93,13 +93,13 @@
   --accent-transparent-2: #00000073;
   --accent-transparent-3: rgba(255, 255, 255, 0.041);
   --box-shadow-top-left: -3px -3px 7px 0px
-    rgba(255, 102, 0, 0.44);
+    rgba(255, 0, 0, 0.44);
   --box-shadow-bottom-right: 3px 3px 7px 0px
-    rgba(255, 102, 0, 0.44);
+    rgba(255, 0, 0, 0.44);
   --box-shadow-top-left-wide: -3px -3px 10px 0px
-    rgba(255, 102, 0, 0.44);
+    rgba(255, 0, 0, 0.44);
   --box-shadow-bottom-right-wide: 3px 3px 10px 0px
-    rgba(255, 102, 0, 0.44);
+    rgba(255, 0, 0, 0.44);
   --global-font: "Plus Jakarta Sans", sans-serif;
   --global-border-radius: 25px 25px 25px 25px;
   --animation-normal: 1.25s;
@@ -152,12 +152,12 @@
   --primary: #1f1f1f;
   --secondary: #fffafa;
   --text-color: #4a4a4a;
-  --accent-color: #FF6600;
+  --accent-color: #FF0000;
   --accent-color-2: #000000;
   --accent-color-3: #ffe6cc;
   --accent-color-4: #f5f5f5;
   --accent-color-5: #ffffff7d;
-  --accent-color-6: #FF660033;
+  --accent-color-6: #FF000033;
   --accent-color-7: #ffffff8c;
   --star-color: #efbc2a;
   --error-color: #e63946;
@@ -1009,7 +1009,7 @@ body.lightmode #newsletterForm input:autofill:focus {
 .btn-accent {
   fill: var(--accent-color-2);
   transition: all 0.6s;
-  background-color: var(--accent-color-4);
+  background-color: var(--accent-color);
   box-shadow: var(--box-shadow-top-left);
 }
 
@@ -1035,19 +1035,19 @@ body.lightmode .keep-dark .btn-accent {
 
 .btn-title a,
 .btn-title span {
-  color: var(--primary);
+  color: #ffffff;
 }
 
 .btn-accent:hover {
   box-shadow: var(--box-shadow-bottom-right);
-  background-color: var(--accent-color-4);
+  background-color: var(--accent-color);
 }
 
 .btn:hover .btn-title a,
 .btn:hover .btn-title span,
 .btn:focus .btn-title a,
 .btn:focus .btn-title span {
-  color: var(--accent-color) !important;
+  color: #ffffff !important;
 }
 
 .btn-sidebar {
@@ -1077,6 +1077,7 @@ body.lightmode .keep-dark .btn-accent {
 
 #themeSwitch i {
   font-size: var(--font-size-xl);
+  color: var(--accent-color);
 }
 
 /* ================== 13. Banner Video Container ================== */
@@ -1592,9 +1593,9 @@ body.lightmode .digital-process-banner {
   -webkit-background-clip: text;
   background-color: transparent;
   background-image: linear-gradient(
-    340deg,
-    var(--accent-transparent) 30%,
-    var(--primary) 100%
+    90deg,
+    #FF0000 0%,
+    #0000FF 100%
   );
   -webkit-text-fill-color: transparent;
   -webkit-tap-highlight-color: transparent;
