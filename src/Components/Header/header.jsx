@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import ThemeSwitcher from "../Theme/themeswitch";
+
 import { useNav } from "../Context/NavContext";
 
 function Navbar() {
@@ -57,7 +57,7 @@ function Navbar() {
           {/* Navbar Action */}
           <div className="navbar-action-container">
             <div className="navbar-action-button">
-              <ThemeSwitcher />
+              {/* <ThemeSwitcher /> */}
             </div>
             <a
               href="tel:+94766338858"

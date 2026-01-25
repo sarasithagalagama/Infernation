@@ -68,7 +68,7 @@ function BannerHomeSection() {
       const containerHeight = container.offsetHeight;
       const aspectRatio = 16 / 9;
       // Scale factor to zoom the video slightly to hide controls/branding
-      const scaleFactor = 1.6;
+      const scaleFactor = 3.0;
 
       let newWidth, newHeight;
       if (containerWidth / containerHeight > aspectRatio) {
