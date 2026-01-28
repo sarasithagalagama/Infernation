@@ -30,6 +30,7 @@ function BannerHomeSection() {
           disablekb: 1,
           modestbranding: 1,
           iv_load_policy: 3,
+          fs: 1,
           origin: window.location.origin,
         },
         events: {
@@ -67,8 +68,8 @@ function BannerHomeSection() {
       const containerWidth = container.offsetWidth;
       const containerHeight = container.offsetHeight;
       const aspectRatio = 16 / 9;
-      // Scale factor to zoom the video slightly to hide controls/branding
-      const scaleFactor = 3.0;
+      // Scale factor to zoom the video to hide controls/branding - increased to push UI further off-screen
+      const scaleFactor = 4.0;
 
       let newWidth, newHeight;
       if (containerWidth / containerHeight > aspectRatio) {
@@ -86,6 +87,12 @@ function BannerHomeSection() {
       const iframe = playerRef.current.getIframe();
       iframe.style.width = `${newWidth}px`;
       iframe.style.height = `${newHeight}px`;
+      iframe.style.position = "absolute";
+      iframe.style.top = "50%";
+      iframe.style.left = "50%";
+      iframe.style.transform = "translate(-50%, -50%)";
+      iframe.style.pointerEvents = "none";
+
       if (!iframe.style.opacity) {
         iframe.style.opacity = "0";
         iframe.style.transition = "opacity 1s ease-in-out";
@@ -115,6 +122,8 @@ function BannerHomeSection() {
           className="banner-video-container keep-dark"
         >
           <div id="banner-video-background"></div>
+          {/* Overlay to block YouTube UI */}
+          <div className="youtube-ui-blocker"></div>
           <div className="hero-container position-relative z-2">
             <div className="d-flex flex-column gspace-2">
               <AnimateOnScroll animation="fadeInLeft" speed="normal">

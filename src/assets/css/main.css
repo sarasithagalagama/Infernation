@@ -1137,6 +1137,53 @@ body.lightmode .keep-dark .btn-accent {
   font-size: var(--font-size-base);
 }
 
+/* YouTube UI Blocker Overlay */
+.youtube-ui-blocker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.youtube-ui-blocker::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(
+    to bottom,
+    var(--secondary) 0%,
+    rgba(4, 4, 4, 0.9) 40%,
+    rgba(4, 4, 4, 0.6) 70%,
+    transparent 100%
+  );
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.youtube-ui-blocker::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(
+    to top,
+    var(--secondary) 0%,
+    rgba(4, 4, 4, 0.9) 40%,
+    rgba(4, 4, 4, 0.6) 70%,
+    transparent 100%
+  );
+  pointer-events: auto;
+  z-index: 1;
+}
+
 /* ================== 14. Banner Components ================== */
 
 /* 14.1 Banner Layout */
