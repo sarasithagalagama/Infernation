@@ -1,129 +1,34 @@
 import React, { useEffect, useRef } from "react";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
+import heroVideo from "../../assets/video/🎬 4K Screensaver – Neon Blue and Purple Liquid Bubbles on Dark Background (No A - Trim.mp4";
 
 function BannerHomeSection() {
-  const playerRef = useRef(null);
-  const videoContainerRef = useRef(null);
+  const videoRef = useRef(null);
 
   useEffect(() => {
-    if (!window.YT) {
-      const tag = document.createElement("script");
-      tag.src = "https://www.youtube.com/iframe_api";
-      const firstScriptTag = document.getElementsByTagName("script")[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    } else {
-      onYouTubeIframeAPIReady();
-    }
-
-    window.onYouTubeIframeAPIReady = () => {
-      playerRef.current = new window.YT.Player("banner-video-background", {
-        videoId: "4Wd8eKM8e2s",
-        playerVars: {
-          autoplay: 1,
-          controls: 0,
-          mute: 1,
-          loop: 1,
-          playlist: "4Wd8eKM8e2s",
-          showinfo: 0,
-          rel: 0,
-          enablejsapi: 1,
-          disablekb: 1,
-          modestbranding: 1,
-          iv_load_policy: 3,
-          fs: 1,
-          origin: window.location.origin,
-        },
-        events: {
-          onReady: onPlayerReady,
-          onStateChange: onPlayerStateChange,
-        },
-      });
-    };
-
-    function onPlayerReady(event) {
-      event.target.playVideo();
-      setYoutubeSize();
-      window.addEventListener("resize", setYoutubeSize);
-    }
-
-    function onPlayerStateChange(event) {
-      if (event.data === window.YT.PlayerState.ENDED) {
-        playerRef.current.playVideo();
-      }
-      if (event.data === window.YT.PlayerState.PLAYING) {
-        playerRef.current.setPlaybackQuality("hd1080");
-        // Ensure styling prevents interaction
-        const iframe = playerRef.current.getIframe();
-        if (iframe) {
-          iframe.style.pointerEvents = "none";
-          iframe.style.opacity = "1";
-        }
-      }
-    }
-
-    function setYoutubeSize() {
-      const container = videoContainerRef.current;
-      if (!container || !playerRef.current?.getIframe) return;
-
-      const containerWidth = container.offsetWidth;
-      const containerHeight = container.offsetHeight;
-      const aspectRatio = 16 / 9;
-      // Scale factor to zoom the video to hide controls/branding - increased to push UI further off-screen
-      const scaleFactor = 4.0;
-
-      let newWidth, newHeight;
-      if (containerWidth / containerHeight > aspectRatio) {
-        newWidth = containerWidth;
-        newHeight = containerWidth / aspectRatio;
-      } else {
-        newWidth = containerHeight * aspectRatio;
-        newHeight = containerHeight;
-      }
-
-      // Apply scale
-      newWidth *= scaleFactor;
-      newHeight *= scaleFactor;
-
-      const iframe = playerRef.current.getIframe();
-      iframe.style.width = `${newWidth}px`;
-      iframe.style.height = `${newHeight}px`;
-      iframe.style.position = "absolute";
-      iframe.style.top = "50%";
-      iframe.style.left = "50%";
-      iframe.style.transform = "translate(-50%, -50%)";
-      iframe.style.pointerEvents = "none";
-
-      if (!iframe.style.opacity) {
-        iframe.style.opacity = "0";
-        iframe.style.transition = "opacity 1s ease-in-out";
-      }
-    }
-
-    function handleYouTubeErrors() {
-      window.addEventListener("message", function (event) {
-        if (event.origin !== "https://www.youtube.com") return;
-
-        try {
-          var data = JSON.parse(event.data);
-        } catch (e) {}
+    // Ensure video plays on load
+    if (videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        console.log("Video autoplay failed:", error);
       });
     }
-
-    return () => {
-      window.removeEventListener("resize", setYoutubeSize);
-    };
   }, []);
 
   return (
     <div className="section-banner">
       <AnimateOnScroll animation="fadeInUp">
-        <div
-          ref={videoContainerRef}
-          className="banner-video-container keep-dark"
-        >
-          <div id="banner-video-background"></div>
-          {/* Overlay to block YouTube UI */}
-          <div className="youtube-ui-blocker"></div>
+        <div className="banner-video-container keep-dark">
+          <video
+            ref={videoRef}
+            className="banner-video-background"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src={heroVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <div className="hero-container position-relative z-2">
             <div className="d-flex flex-column gspace-2">
               <AnimateOnScroll animation="fadeInLeft" speed="normal">
