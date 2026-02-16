@@ -33,7 +33,7 @@ const ContactSection = () => {
                         href="tel:+94766338858"
                         style={{ color: "inherit", textDecoration: "none" }}
                       >
-                        +94 76 633 8858
+                        +94 766 338 858
                       </a>
                     </h5>
                   </div>

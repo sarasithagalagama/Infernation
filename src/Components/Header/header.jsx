@@ -67,7 +67,7 @@ function Navbar() {
               <div className="icon-circle">
                 <i className="fa-solid fa-phone-volume"></i>
               </div>
-              <h6>+94 (0) 766 338 858</h6>
+              <h6>+94 766 338 858</h6>
             </a>
           </div>
         </div>

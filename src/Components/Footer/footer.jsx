@@ -64,7 +64,7 @@ const Footer = () => {
                     <h5>LET'S TALK ABOUT THE NEXT BIG IDEA</h5>
                     <ul className="contact-list">
                       <li>dreams@infernation.com</li>
-                      <li>+94 (0) 766 338 858</li>
+                      <li>+94 766 338 858</li>
                     </ul>
                     <div className="d-flex flex-column gspace-1">
                       <h5>Follow Us</h5>
