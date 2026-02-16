@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -43,16 +44,16 @@ const Footer = () => {
                     <h5>Quick Links</h5>
                     <ul className="footer-list">
                       <li>
-                        <a href="/">Home</a>
+                        <Link to="/">Home</Link>
                       </li>
                       <li>
-                        <a href="/about">About Us</a>
+                        <Link to="/about">About Us</Link>
                       </li>
                       <li>
-                        <a href="/service">Services</a>
+                        <Link to="/service">Services</Link>
                       </li>
                       <li>
-                        <a href="/contact">Contact Us</a>
+                        <Link to="/contact">Contact Us</Link>
                       </li>
                     </ul>
                   </div>
@@ -63,19 +64,19 @@ const Footer = () => {
                     <h5>Our Services</h5>
                     <ul className="footer-list">
                       <li>
-                        <a href="/service">Visual Content</a>
+                        <Link to="/service">Visual Content</Link>
                       </li>
                       <li>
-                        <a href="/service">Digital Marketing</a>
+                        <Link to="/service">Digital Marketing</Link>
                       </li>
                       <li>
-                        <a href="/service">Design & Development</a>
+                        <Link to="/service">Design & Development</Link>
                       </li>
                       <li>
-                        <a href="/service">Event Planning</a>
+                        <Link to="/service">Event Planning</Link>
                       </li>
                       <li>
-                        <a href="/service">Influencer Collabs</a>
+                        <Link to="/service">Influencer Collabs</Link>
                       </li>
                     </ul>
                   </div>

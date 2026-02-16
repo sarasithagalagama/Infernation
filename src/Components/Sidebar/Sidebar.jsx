@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   const overlayRef = useRef(null);
@@ -83,10 +84,10 @@ function Sidebar() {
         </div>
         <ul className="menu">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="about">About Us</a>
+            <Link to="/about">About Us</Link>
           </li>
           <li className="sidebar-dropdown">
             <div className="dropdown-header">
@@ -97,10 +98,10 @@ function Sidebar() {
             </div>
             <ul className="sidebar-dropdown-menu">
               <li>
-                <a href="service">Service</a>
+                <Link to="/service">Service</Link>
               </li>
               <li>
-                <a href="single_services">Service Details</a>
+                <Link to="/single_services">Service Details</Link>
               </li>
             </ul>
           </li>
@@ -113,25 +114,25 @@ function Sidebar() {
             </div>
             <ul className="sidebar-dropdown-menu">
               <li>
-                <a href="case_studies">Case Studies</a>
+                <Link to="/case_studies">Case Studies</Link>
               </li>
               <li>
-                <a href="team">Our Team</a>
+                <Link to="/team">Our Team</Link>
               </li>
               <li>
-                <a href="partnership">Partnership</a>
+                <Link to="/partnership">Partnership</Link>
               </li>
               <li>
-                <a href="pricing">Pricing Plan</a>
+                <Link to="/pricing">Pricing Plan</Link>
               </li>
               <li>
-                <a href="testimonial">Testimonial</a>
+                <Link to="/Testimonial">Testimonial</Link>
               </li>
               <li>
-                <a href="faq">FAQs</a>
+                <Link to="/faq">FAQs</Link>
               </li>
               <li>
-                <a href="404_page">Error 404</a>
+                <Link to="/404_page">Error 404</Link>
               </li>
             </ul>
           </li>
@@ -144,15 +145,15 @@ function Sidebar() {
             </div>
             <ul className="sidebar-dropdown-menu">
               <li>
-                <a href="blog">Blog</a>
+                <Link to="/blog">Blog</Link>
               </li>
               <li>
-                <a href="single_post">Single Post</a>
+                <Link to="/single_post">Single Post</Link>
               </li>
             </ul>
           </li>
           <li className="below-dropdown">
-            <a href="contact">Contact Us</a>
+            <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
       </div>

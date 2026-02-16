@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 import heroVideo from "../../assets/video/🎬 4K Screensaver – Neon Blue and Purple Liquid Bubbles on Dark Background (No A - Trim.mp4";
 
@@ -51,14 +52,14 @@ function BannerHomeSection() {
                       Memorable Events That Bring Brands And Stories To Life.
                     </p>
                     <div className="d-flex flex-md-row flex-column justify-content-center justify-content-lg-start align-self-center align-self-lg-start gspace-3">
-                      <a href="./service" className="btn btn-accent">
+                      <Link to="/service" className="btn btn-accent">
                         <div className="btn-title">
                           <span>EXPLORE OUR SERVICES</span>
                         </div>
                         <div className="icon-circle">
                           <i className="fa-solid fa-arrow-right"></i>
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </AnimateOnScroll>

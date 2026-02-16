@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { serviceGridCards } from "../../Data/ServiceGridData";
 import ServiceCard from "../Card/ServiceCard";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
@@ -53,7 +54,7 @@ function ServiceSection() {
               <p>
                 Need a custom solution? Let&apos;s create a strategy tailored
                 for your business.
-                <a href="./contact"> Get a Free Strategy Call</a>
+                <Link to="/contact"> Get a Free Strategy Call</Link>
               </p>
             </div>
           </div>
