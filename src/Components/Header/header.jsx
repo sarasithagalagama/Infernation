@@ -23,8 +23,6 @@ function Navbar() {
           <button
             className="navbar-toggler nav-btn"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -43,6 +41,12 @@ function Navbar() {
               <li className="nav-item">
                 <NavLink to="/about" className="nav-link">
                   About
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink to="/service" className="nav-link">
+                  Services
                 </NavLink>
               </li>
 

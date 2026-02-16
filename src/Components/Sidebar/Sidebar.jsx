@@ -89,70 +89,10 @@ function Sidebar() {
           <li>
             <Link to="/about">About Us</Link>
           </li>
-          <li className="sidebar-dropdown">
-            <div className="dropdown-header">
-              <a href="#">Services</a>
-              <button className="sidebar-dropdown-btn">
-                <i className="fa-solid fa-angle-down"></i>
-              </button>
-            </div>
-            <ul className="sidebar-dropdown-menu">
-              <li>
-                <Link to="/service">Service</Link>
-              </li>
-              <li>
-                <Link to="/single_services">Service Details</Link>
-              </li>
-            </ul>
+          <li>
+            <Link to="/service">Services</Link>
           </li>
-          <li className="sidebar-dropdown">
-            <div className="dropdown-header">
-              <a href="#">Pages</a>
-              <button className="sidebar-dropdown-btn">
-                <i className="fa-solid fa-angle-down"></i>
-              </button>
-            </div>
-            <ul className="sidebar-dropdown-menu">
-              <li>
-                <Link to="/case_studies">Case Studies</Link>
-              </li>
-              <li>
-                <Link to="/team">Our Team</Link>
-              </li>
-              <li>
-                <Link to="/partnership">Partnership</Link>
-              </li>
-              <li>
-                <Link to="/pricing">Pricing Plan</Link>
-              </li>
-              <li>
-                <Link to="/Testimonial">Testimonial</Link>
-              </li>
-              <li>
-                <Link to="/faq">FAQs</Link>
-              </li>
-              <li>
-                <Link to="/404_page">Error 404</Link>
-              </li>
-            </ul>
-          </li>
-          <li className="sidebar-dropdown">
-            <div className="dropdown-header">
-              <a href="#">Archive</a>
-              <button className="sidebar-dropdown-btn">
-                <i className="fa-solid fa-angle-down"></i>
-              </button>
-            </div>
-            <ul className="sidebar-dropdown-menu">
-              <li>
-                <Link to="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link to="/single_post">Single Post</Link>
-              </li>
-            </ul>
-          </li>
-          <li className="below-dropdown">
+          <li>
             <Link to="/contact">Contact Us</Link>
           </li>
         </ul>

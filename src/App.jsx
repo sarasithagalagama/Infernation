@@ -7,6 +7,7 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 import { ModalVideoProvider } from "./Components/Video/ModalVideoContext";
 import { NavProvider } from "./Components/Context/NavContext";
 import Preloader from "./Components/Loader/Preloader";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       {loading && <Preloader />}
       <NavProvider>
         <ModalVideoProvider>

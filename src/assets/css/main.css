@@ -648,7 +648,7 @@ body.lightmode .form select {
 
 .navbar-nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 
