@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { whychooseus } from "../../Data/ChooseUsData";
 import ChooseUsCard from "../Card/ChoooseUsCard";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
@@ -43,7 +44,7 @@ function ChooseUsAboutSection() {
                 </AnimateOnScroll>
                 <div className="image-container">
                   <img
-                    src="/assets/images/choose_us_visual.jpg"
+                    src="/assets/images/Gemini_Generated_Image_9aezor9aezor9aez.png"
                     alt="Why Choose Us Image"
                     className="chooseus-img"
                   />
@@ -59,7 +60,7 @@ function ChooseUsAboutSection() {
                               next level.
                             </h5>
                             <div className="link-wrapper">
-                              <a href="./contact">Let's Talk Strategy</a>
+                              <Link to="/contact">Let's Talk Strategy</Link>
                               <i className="fa-solid fa-circle-arrow-right"></i>
                             </div>
                           </div>

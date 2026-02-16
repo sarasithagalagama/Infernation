@@ -20,8 +20,8 @@ const Footer = () => {
                 </p>
               </div>
 
-              <div className="row row-cols-lg-4 row-cols-md-2 row-cols-1 grid-spacer-5">
-                <div className="col col-lg-4">
+              <div className="row row-cols-lg-3 row-cols-md-2 row-cols-1 grid-spacer-5 justify-content-between">
+                <div className="col col-lg-5">
                   <div className="footer-logo-container">
                     <div className="logo-container-footer">
                       <img
@@ -59,30 +59,7 @@ const Footer = () => {
                   </div>
                 </div>
 
-                <div className="col col-lg-3">
-                  <div className="footer-services-container">
-                    <h5>Our Services</h5>
-                    <ul className="footer-list">
-                      <li>
-                        <Link to="/service">Visual Content</Link>
-                      </li>
-                      <li>
-                        <Link to="/service">Digital Marketing</Link>
-                      </li>
-                      <li>
-                        <Link to="/service">Design & Development</Link>
-                      </li>
-                      <li>
-                        <Link to="/service">Event Planning</Link>
-                      </li>
-                      <li>
-                        <Link to="/service">Influencer Collabs</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="col col-lg-3">
+                <div className="col col-lg-4">
                   <div className="footer-contact-container">
                     <h5>LET'S TALK ABOUT THE NEXT BIG IDEA</h5>
                     <ul className="contact-list">
